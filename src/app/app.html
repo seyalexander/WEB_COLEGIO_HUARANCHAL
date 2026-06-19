@@ -1,1 +1,203 @@
+<div class="lg:hidden flex items-center justify-between
+         px-8 py-6">
+
+    <!-- LOGO -->
+
+    <div class="flex items-center gap-3">
+
+        <img src="assets/logo.png" class="w-12 h-12
+             object-contain
+             rounded-full" />
+
+        <div>
+
+            <h3 class="font-bold
+               text-white">
+
+                Miguel Grau 80826
+
+            </h3>
+
+            <p class="text-sm
+               text-white">
+
+                Huaranchal
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- BOTON MOBILE -->
+
+    <button (click)="openMenu = !openMenu" class="lg:hidden
+           w-12 h-12
+           rounded-xl
+           bg-white/10
+           border border-white/10
+           backdrop-blur-xl
+           flex items-center justify-center">
+
+       <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#308d40"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 6h10" />
+  <path d="M4 12h16" />
+  <path d="M7 12h13" />
+  <path d="M4 18h10" />
+</svg>
+
+    </button>
+
+</div>
+
+<!-- OVERLAY -->
+
+@if(openMenu){
+
+<div (click)="openMenu=false" class="fixed inset-0
+         bg-black/60
+         backdrop-blur-sm
+         z-[998]">
+</div>
+
+}
+
+<!-- DRAWER -->
+
+<div class="fixed
+         top-0 right-0
+         h-screen
+         w-[320px]
+         z-[999]
+         transition-all duration-500" [class.translate-x-full]="!openMenu" [class.translate-x-0]="openMenu">
+
+    <div class="h-full
+           bg-[#0B0B0F]/95
+           backdrop-blur-2xl
+           border-l border-white/10
+           p-8">
+
+        <!-- HEADER -->
+
+        <div class="flex items-center
+             justify-between">
+
+            <div class="flex items-center gap-3">
+
+                <img src="assets/logo.png" class="w-12 h-12
+                 rounded-full">
+
+                <div>
+
+                    <h3 class="font-bold
+                   text-white">
+
+                        Miguel Grau
+
+                    </h3>
+
+                    <p class="text-sm
+                   text-slate-400">
+
+                        Huaranchal
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button (click)="openMenu=false" class="w-10 h-10
+               rounded-xl
+               bg-white/10
+               text-white">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <!-- LINKS -->
+
+        <nav class="mt-12
+             flex flex-col gap-3">
+
+            <a [routerLink]="'/Inicio'" (click)="openMenu=false" class="px-6 py-4
+               rounded-2xl
+               bg-white/5
+               border border-white/10
+               text-white
+               hover:bg-white/10">
+
+                Inicio
+
+            </a>
+
+            <a [routerLink]="'/Historia'" (click)="openMenu=false" class="px-6 py-4
+               rounded-2xl
+               bg-white/5
+               border border-white/10
+               text-white">
+
+                Historia
+
+            </a>
+
+            <a [routerLink]="'/Premios'" (click)="openMenu=false" class="px-6 py-4
+               rounded-2xl
+               bg-white/5
+               border border-white/10
+               text-white">
+
+                Premios
+
+            </a>
+
+            <a [routerLink]="'/Fiesta'" (click)="openMenu=false" class="px-6 py-4
+               rounded-2xl
+               bg-white/5
+               border border-white/10
+               text-white">
+
+                Fiesta Patronal
+
+            </a>
+
+            <a [routerLink]="'/Aniversario'" (click)="openMenu=false" class="px-6 py-4
+               rounded-2xl
+               bg-white/5
+               border border-white/10
+               text-white">
+
+                Aniversario
+
+            </a>
+
+            <a [routerLink]="'/Psicologia'" (click)="openMenu=false" class="px-6 py-4
+               rounded-2xl
+               bg-cyan-500/20
+               border border-cyan-500/20
+               text-cyan-300">
+
+                Psicología
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</div>
+
 <router-outlet />
