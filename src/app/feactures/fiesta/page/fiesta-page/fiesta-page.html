@@ -1,0 +1,340 @@
+<section id="fiesta-hero" class="relative min-h-screen overflow-hidden bg-[#0B0B0F] px-6 py-8">
+
+    <!-- EFECTOS -->
+
+    <div class="absolute top-0 left-0
+           w-[600px] h-[600px]
+           bg-amber-500/20
+           rounded-full
+           blur-3xl">
+    </div>
+
+    <div class="absolute bottom-0 right-0
+           w-[600px] h-[600px]
+           bg-red-500/20
+           rounded-full
+           blur-3xl">
+    </div>
+
+    <!-- CONTENEDOR -->
+
+    <div class="relative z-10
+           max-w-7xl mx-auto">
+
+        <div class="rounded-[40px]
+             overflow-hidden
+             bg-white/5
+             backdrop-blur-xl
+             border border-white/10">
+
+              <!-- NAVBAR -->
+      <app-navigator />
+
+            <!-- HERO -->
+
+            <div class="grid lg:grid-cols-2 gap-10">
+
+                <!-- TEXTO -->
+
+                <div class="flex flex-col justify-center
+                 p-10 lg:p-16">
+
+                    <span class="inline-flex w-fit
+                   px-5 py-2
+                   rounded-full
+                   bg-amber-400/20
+                   text-amber-300
+                   font-semibold">
+
+                        🎉 Tradición • Cultura • Fe
+
+                    </span>
+
+                    <h1 class="mt-8
+                   text-6xl lg:text-8xl
+                   font-black
+                   text-white
+                   leading-none">
+
+                        Fiesta
+
+                        <span class="block
+                     text-amber-400">
+
+                            Patronal
+
+                        </span>
+
+                    </h1>
+
+                    <p class="mt-8
+                   text-xl
+                   leading-9
+                   text-slate-300
+                   max-w-xl">
+
+                        Una de las celebraciones más importantes
+                        de Huaranchal, donde la fe, la música,
+                        las danzas tradicionales y la unión de la
+                        comunidad llenan de vida nuestras calles.
+
+                    </p>
+
+                    <div class="mt-10
+                   flex gap-4 flex-wrap">
+
+                        <button class="px-8 py-4
+                     rounded-2xl
+                     bg-amber-500
+                     text-black
+                     font-bold">
+
+                            Ver Actividades
+
+                        </button>
+
+                        <button class="px-8 py-4
+                     rounded-2xl
+                     bg-white/10
+                     border border-white/10
+                     text-white">
+
+                            Galería
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- FOTO -->
+
+                <div class="relative">
+
+                    <img src="assets/viacrucis.png" class="h-full
+                   min-h-[650px]
+                   w-full
+                   object-cover">
+
+                    <div class="absolute inset-0
+                   bg-gradient-to-t
+                   from-black
+                   via-black/20
+                   to-transparent">
+                    </div>
+
+                    <!-- CARD FLOTANTE -->
+
+                    <div class="absolute
+                   bottom-8 left-8
+                   bg-white/10
+                   backdrop-blur-xl
+                   border border-white/10
+                   rounded-[30px]
+                   p-6">
+
+                        <span class="text-amber-300">
+
+                            Celebración Anual
+
+                        </span>
+
+                        <h3 class="text-4xl
+                     font-black
+                     text-white">
+
+                            Huaranchal
+
+                        </h3>
+
+                        <p class="text-slate-300">
+
+                            Música • Danzas • Procesiones
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARDS INFERIORES -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+
+            <!-- PROCESIONES -->
+
+            <div class="group relative h-[280px]
+           overflow-hidden
+           rounded-[30px]
+           cursor-pointer">
+
+                <img src="assets/procesion.png" class="absolute inset-0
+             w-full h-full
+             object-cover
+             group-hover:scale-110
+             transition-all duration-700">
+
+                <div class="absolute inset-0
+             bg-gradient-to-t
+             from-black
+             via-black/40
+             to-transparent">
+                </div>
+
+                <div class="absolute bottom-6 left-6">
+
+                    <h3 class="mt-3
+               text-2xl
+               font-bold
+               text-white">
+
+                        Procesiones
+
+                    </h3>
+
+                    <p class="mt-2
+               text-slate-300">
+
+                        Fe y tradición religiosa.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- DANZAS -->
+
+            <div class="group relative h-[280px]
+           overflow-hidden
+           rounded-[30px]
+           cursor-pointer">
+
+                <img src="assets/colegio_03.jpeg" class="absolute inset-0
+             w-full h-full
+             object-cover
+             group-hover:scale-110
+             transition-all duration-700">
+
+                <div class="absolute inset-0
+             bg-gradient-to-t
+             from-black
+             via-black/40
+             to-transparent">
+                </div>
+
+                <div class="absolute bottom-6 left-6">
+
+                    <h3 class="mt-3
+               text-2xl
+               font-bold
+               text-white">
+
+                        Danzas
+
+                    </h3>
+
+                    <p class="mt-2
+               text-slate-300">
+
+                        Expresión cultural huaranchalina.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BANDAS -->
+
+            <div class="group relative h-[280px]
+           overflow-hidden
+           rounded-[30px]
+           cursor-pointer">
+
+                <img src="assets/banda_01.png" class="absolute inset-0
+             w-full h-full
+             object-cover
+             group-hover:scale-110
+             transition-all duration-700">
+
+                <div class="absolute inset-0
+             bg-gradient-to-t
+             from-black
+             via-black/40
+             to-transparent">
+                </div>
+
+                <div class="absolute bottom-6 left-6">
+
+                    <h3 class="mt-3
+               text-2xl
+               font-bold
+               text-white">
+
+                        Bandas
+
+                    </h3>
+
+                    <p class="mt-2
+               text-slate-300">
+
+                        Música que acompaña la festividad.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CELEBRACIONES -->
+
+            <div class="group relative h-[280px]
+           overflow-hidden
+           rounded-[30px]
+           cursor-pointer">
+
+                <img src="assets/castillos.png" class="absolute inset-0
+             w-full h-full
+             object-cover
+             group-hover:scale-110
+             transition-all duration-700">
+
+                <div class="absolute inset-0
+             bg-gradient-to-t
+             from-black
+             via-black/40
+             to-transparent">
+                </div>
+
+                <div class="absolute bottom-6 left-6">
+
+                    <h3 class="mt-3
+               text-2xl
+               font-bold
+               text-white">
+
+                        Celebraciones
+
+                    </h3>
+
+                    <p class="mt-2
+               text-slate-300">
+
+                        Alegría, comunidad y tradición.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

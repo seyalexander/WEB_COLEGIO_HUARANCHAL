@@ -1,0 +1,460 @@
+<section
+    class="relative min-h-[80vh]
+           flex items-center
+           overflow-hidden">
+
+    <img
+        src="assets/RESENAS/hero.jpg"
+        class="absolute inset-0
+               w-full h-full
+               object-cover">
+
+    <div
+        class="absolute inset-0
+               bg-gradient-to-r
+               from-[#0F172A]/90
+               via-[#0F172A]/70
+               to-transparent">
+    </div>
+
+    <div
+        class="relative z-10
+               max-w-7xl mx-auto px-6">
+
+        <div class="max-w-4xl">
+
+            <span
+                class="inline-flex px-5 py-2
+                       rounded-full
+                       bg-white/10
+                       backdrop-blur-md
+                       text-white">
+
+                Testimonios y Experiencias
+
+            </span>
+
+            <h1
+                class="mt-8
+                       text-6xl md:text-8xl
+                       font-black
+                       text-white">
+
+                Lo que dicen
+                nuestros estudiantes
+
+            </h1>
+
+            <p
+                class="mt-8
+                       text-xl
+                       text-slate-200">
+
+                Historias, recuerdos y experiencias
+                compartidas por quienes forman parte
+                de la familia Miguelina.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <span
+                class="inline-flex px-5 py-2
+                       rounded-full
+                       bg-[#1E3A8A]/10
+                       text-[#1E3A8A]">
+
+                Comunidad Miguelina
+
+            </span>
+
+            <h2
+                class="mt-6
+                       text-5xl
+                       font-black">
+
+                Miles de historias,
+                un mismo sentimiento
+
+            </h2>
+
+            <p
+                class="mt-8
+                       max-w-3xl mx-auto
+                       text-lg text-slate-600">
+
+                Cada generación de estudiantes,
+                docentes y familias ha contribuido
+                a construir la historia de nuestra institución.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-20 bg-[#FAFAF7]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div
+            class="grid md:grid-cols-4 gap-6">
+
+            <div
+                class="bg-white
+                       rounded-4xl
+                       p-8 text-center">
+
+                <h3
+                    class="text-5xl
+                           font-black
+                           text-[#1E3A8A]">
+
+                    95%
+
+                </h3>
+
+                <p class="mt-3 text-slate-600">
+
+                    Satisfacción
+
+                </p>
+
+            </div>
+
+            <div
+                class="bg-white
+                       rounded-4xl
+                       p-8 text-center">
+
+                <h3
+                    class="text-5xl
+                           font-black
+                           text-[#1E3A8A]">
+
+                    500+
+
+                </h3>
+
+                <p class="mt-3 text-slate-600">
+
+                    Egresados
+
+                </p>
+
+            </div>
+
+            <div
+                class="bg-white
+                       rounded-4xl
+                       p-8 text-center">
+
+                <h3
+                    class="text-5xl
+                           font-black
+                           text-[#1E3A8A]">
+
+                    30+
+
+                </h3>
+
+                <p class="mt-3 text-slate-600">
+
+                    Promociones
+
+                </p>
+
+            </div>
+
+            <div
+                class="bg-white
+                       rounded-4xl
+                       p-8 text-center">
+
+                <h3
+                    class="text-5xl
+                           font-black
+                           text-[#1E3A8A]">
+
+                    ⭐ 4.9
+
+                </h3>
+
+                <p class="mt-3 text-slate-600">
+
+                    Valoración
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-32 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <h2
+                class="text-5xl
+                       font-black">
+
+                Testimonios Destacados
+
+            </h2>
+
+        </div>
+
+        <div
+            class="grid lg:grid-cols-3
+                   gap-8 mt-16">
+
+            <article
+                class="bg-[#FAFAF7]
+                       rounded-[32px]
+                       p-8">
+
+                <div class="text-yellow-400 text-2xl">
+
+                    ⭐⭐⭐⭐⭐
+
+                </div>
+
+                <p
+                    class="mt-6
+                           text-slate-600
+                           leading-8">
+
+                    El colegio me permitió crecer
+                    académicamente y desarrollar
+                    valores que hoy aplico en mi vida.
+
+                </p>
+
+                <div
+                    class="mt-8 flex items-center gap-4">
+
+                    <img
+                        src="assets/RESENAS/alumno_01.jpg"
+                        class="w-14 h-14 rounded-full object-cover">
+
+                    <div>
+
+                        <h4 class="font-bold">
+
+                            Juan Pérez
+
+                        </h4>
+
+                        <p class="text-sm text-slate-500">
+
+                            Promoción 2022
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div
+    class="flex gap-3
+           overflow-x-auto
+           pb-2">
+
+    @for(tab of reseniasTabs; track tab.id){
+
+        <button
+
+            (click)="reseniaSeleccionada = $any(tab.id)"
+
+            [ngClass]="{
+              'bg-[#1E3A8A] text-white': reseniaSeleccionada === tab.id,
+              'bg-slate-100 text-slate-700': reseniaSeleccionada !== tab.id
+            }"
+
+            class="px-5 py-3 rounded-full">
+
+            {{ tab.icono }}
+            {{ tab.nombre }}
+
+        </button>
+
+    }
+
+</div>
+
+<section class="py-32 bg-[#FAFAF7]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div
+            class="grid lg:grid-cols-2
+                   gap-20 items-center">
+
+            <div>
+
+                <img
+                    src="assets/RESENAS/exalumno.jpg"
+                    class="rounded-[32px]
+                           shadow-2xl">
+
+            </div>
+
+            <div>
+
+                <span
+                    class="inline-flex px-5 py-2
+                           rounded-full
+                           bg-[#F6C445]/10
+                           text-[#F28C28]">
+
+                    Historia Destacada
+
+                </span>
+
+                <h2
+                    class="mt-6
+                           text-5xl
+                           font-black">
+
+                    De estudiante
+                    a profesional
+
+                </h2>
+
+                <p
+                    class="mt-8
+                           text-slate-600
+                           leading-8">
+
+                    Conoce la historia de un egresado
+                    que inició su formación en el colegio
+                    y hoy contribuye al desarrollo de su comunidad.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-32 bg-white">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <h2
+            class="text-center
+                   text-5xl
+                   font-black">
+
+            Muro de Recuerdos
+
+        </h2>
+
+        <div
+            class="space-y-6 mt-16">
+
+            <article
+                class="bg-[#FAFAF7]
+                       rounded-3xl
+                       p-6">
+
+                <div class="flex items-center gap-4">
+
+                    <img
+                        src="assets/RESENAS/user.jpg"
+                        class="w-12 h-12 rounded-full">
+
+                    <div>
+
+                        <h4 class="font-bold">
+
+                            María Rodríguez
+
+                        </h4>
+
+                        <p class="text-sm text-slate-500">
+
+                            Promoción 2018
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p
+                    class="mt-4 text-slate-600">
+
+                    Siempre recordaré los momentos
+                    compartidos con mis compañeros
+                    y docentes.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-32 bg-[#1E3A8A]">
+
+    <div
+        class="max-w-4xl mx-auto
+               text-center px-6">
+
+        <h2
+            class="text-6xl
+                   font-black
+                   text-white">
+
+            Una comunidad que deja huella
+
+        </h2>
+
+        <p
+            class="mt-8
+                   text-xl
+                   text-blue-100">
+
+            Cada experiencia compartida refleja
+            el impacto que la Institución Educativa
+            Miguel Grau ha tenido en generaciones
+            de estudiantes y familias.
+
+        </p>
+
+    </div>
+
+</section>
